@@ -1,0 +1,42 @@
+{
+    "handle": "test.marshal.dev",
+    "did": "did:plc:kvwvcn5iqfooopmyzvb4qzba",
+    "didDoc": {
+        "@context": [
+            "https://www.w3.org/ns/did/v1",
+            "https://w3id.org/security/multikey/v1",
+            "https://w3id.org/security/suites/secp256k1-2019/v1"
+        ],
+        "id": "did:plc:kvwvcn5iqfooopmyzvb4qzba",
+        "alsoKnownAs": [
+            "at://test.marshal.dev"
+        ],
+        "verificationMethod": [
+            {
+                "id": "did:plc:kvwvcn5iqfooopmyzvb4qzba#atproto",
+                "type": "Multikey",
+                "controller": "did:plc:kvwvcn5iqfooopmyzvb4qzba",
+                "publicKeyMultibase": "zQ3shc6V2kvUxn7hNmPy9JMToKT7u2NH27SnKNxGL1GcBcS4j"
+            }
+        ],
+        "service": [
+            {
+                "id": "#atproto_pds",
+                "type": "AtprotoPersonalDataServer",
+                "serviceEndpoint": "https://shimeji.us-east.host.bsky.network"
+            }
+        ]
+    },
+    "collections": [
+        "app.bsky.actor.profile",
+        "app.bsky.feed.generator",
+        "app.bsky.feed.like",
+        "app.bsky.feed.post",
+        "app.bsky.feed.repost",
+        "app.bsky.graph.follow",
+        "app.bsky.graph.list",
+        "app.bsky.graph.listitem",
+        "chat.bsky.actor.declaration"
+    ],
+    "handleIsCorrect": true
+}

@@ -1,0 +1,4 @@
+# Add this to your .gitignore
+void_linux/*.qcow2
+void_linux/*.iso
+void_linux/*.img
